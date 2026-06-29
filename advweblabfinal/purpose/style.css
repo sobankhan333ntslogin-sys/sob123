@@ -200,6 +200,15 @@ body {
     margin-bottom: 12px;
 }
 
+.voice-compliment {
+    font-size: 1.15rem;
+    font-style: italic;
+    color: #4a5568;
+    margin: 8px 0 24px 0;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
 .success-message {
     font-size: 1.3rem;
     font-weight: 600;
