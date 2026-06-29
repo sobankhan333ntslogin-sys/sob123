@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Ishrat! 💖</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Pacifico&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Canvas Confetti CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <!-- Floating background decorative hearts -->
+    <div class="floating-hearts" id="floatingHearts"></div>
+
+    <div class="app-container">
+        <!-- SCREEN 1: Welcome Screen -->
+        <div class="card active" id="screen1">
+            <div class="avatar-container">
+                <div class="avatar">👨‍💻</div>
+            </div>
+            <h1 class="title">Hello, <span class="highlight">Soban</span> here!</h1>
+            <p class="subtitle">I have a special message waiting for you. Are you ready?</p>
+            <button class="btn btn-primary ripple-btn" id="startBtn">
+                <span>Click on me</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="btn-icon"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </button>
+        </div>
+
+        <!-- SCREEN 2: The Proposal Screen -->
+        <div class="card" id="screen2">
+            <div class="avatar-container">
+                <div class="avatar-pair">
+                    <span class="avatar-left">👦</span>
+                    <span class="heart-pulse">💖</span>
+                    <span class="avatar-right">👧</span>
+                </div>
+            </div>
+            <h1 class="proposal-text font-accent">Ishrat, can we become friends?</h1>
+            <p class="sub-proposal">Please choose carefully! 😉</p>
+            
+            <div class="btn-group" id="btnGroup">
+                <button class="btn btn-success" id="yesBtn">
+                    <span>Yes! 😍</span>
+                </button>
+                <button class="btn btn-danger" id="noBtn">
+                    <span>No 😢</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- SCREEN 3: Success Celebration Screen -->
+        <div class="card" id="screen3">
+            <div class="celebration-badge">🎉</div>
+            <div class="avatar-container">
+                <div class="avatar-pair success-pair">
+                    <span class="avatar-left bouncy">👦</span>
+                    <span class="love-heart">❤️</span>
+                    <span class="avatar-right bouncy delay-1">👧</span>
+                </div>
+            </div>
+            <h1 class="success-title">Congratulations!</h1>
+            <p class="success-message">
+                <span class="highlight">Soban</span> and <span class="highlight">Ishrat</span> are friends now! 🥳✨
+            </p>
+            <div class="hearts-sparkle">❤️❤️❤️</div>
+        </div>
+    </div>
+
+    <!-- Main JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
